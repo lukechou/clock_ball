@@ -2,12 +2,30 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css" type="text/css">
     <title></title>
 </head>
-<body style="background-color:gainsboro">
-    <canvas id="canvas" style="margin:0px auto;display:block; border:2px solid grey">当前浏览器不支持canvas</canvas>
+<body >
+<div class="clock">
+    <ul class="line-min">
+    </ul>
+    <ul class="line-hour">
+        <!-- <li class="line-demo"></li> -->
+    </ul>
+    <ol class="number"></ol>
+    <ul class="pointer">
+        <li class="hour"></li>
+        <li class="min"></li>
+        <li class="sec"></li>
+        <li class="circle"></li>
+    </ul>
+</div>
+<canvas id="canvas" style="margin:10px auto 0;display:block; border:2px solid grey">
 
-    <script src="js/digit.js"></script>
-    <script src="js/down.js"></script>
+    当前浏览器不支持canvas</canvas>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/digit.js"></script>
+<script src="js/down.js"></script>
+<script src="js/clock.js"></script>
 </body>
 </html>
